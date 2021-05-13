@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="Rayo.png">
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet" >
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link type="text/css" rel="stylesheet" href="css/estilos.css" rel="stylesheet" >
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+
+    <title>Rayo Makween</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <strong>Taller</strong>
+            R.M
+          </a>
+      
+      
+          <form class="form-check-inline  text-center" >
+            <input class="form-control " type="search" placeholder="Buscador" aria-label="Buscador">
+          </form> 
+      
+          <button class="btn btn-outline-light text-center col-xs" type="submit">Buscar</button>
+          <button type="button" class="navbar-toggler" data-toggle="collapse"
+          data-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false"
+          aria-label="Desplegar menu de navegacion">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse text-center" id="menu-principal">
+          <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="proyectoweb.html" class="nav-link ">Inicio</a></li>
+          <li class="nav-item"><a href="Galeria.html" class="nav-link">Galeria</a></li>
+          <li class="nav-item"><a href="Contacto.html" class="nav-link active">Contacto</a></li>
+          </ul>
+        </div>
+        
+        </div>
+      </nav>
+    </header>
+   
+      <section class="Sobre nosotros py-5"> 
+        <div class="container">
+            <div class="col-12 col-md-6 col text-center  align-self-md-center">
+              <h1 class="display-4 font-weight-bold text-primary">Contactenos</h1>
+            </div>
+          </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="juanitoperez@gmail.com">
+            </div>
+            <div class="col-12">
+              <label for="exampleDataList" class="form-label">Comuna</label>
+              <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="busca tu comuna">
+              <datalist id="datalistOptions">
+                <option value="Florida">
+                <option value="Puente alto">
+                <option value="La pintana">
+                <option value="Las condes">
+                <option value="Lo espejo">
+              </datalist>
+            </div>
+
+            <div class="col-12 py-4">
+              <label for="exampleFormControlTextarea1" class="form-label">Motivo del Contacto</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <br>
+              <a href="#" class="btn btn-primary">Enviar</a>
+            </div>
+          </section>
+          </div>
+        </div>
+      </section>
+<div class="container">
+  <div class="row">
+    <div class="col-12 py-4" id='map' style='width: 400px; height: 300px;'></div>
+  </div>
+</div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibmlrcGFyazIzIiwiYSI6ImNrb213bnBkNDBzcjEycGxwOHZiM202a3EifQ.PkeexmwuapVLyTWL9paKOg';
+  var map = new mapboxgl.Map({
+  container: 'map', // container ID
+  style: 'mapbox://styles/mapbox/streets-v11', // style URL
+  center: [-74.5, 40], // starting position [lng, lat]
+  zoom: 9 // starting zoom
+  });
+  </script>
+      
+      <footer class="pie de pagina text-center bg-dark text-white fixed-bottom">
+    
+        <p class="m-0">&copy; Todos los derechos reservados 2021. </p>
+        
+      </footer>
+  </body>
+        
+  
+      <script src="js/jquery-3.3.1.min.js" ></script>
+      <script src="js/popper.min.js" ></script>
+      <script src="js/bootstrap.min.js" ></script>
+    
+  </html>
